@@ -1,0 +1,158 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Heading */
+.heading {
+  width: 100%;
+  padding: 1rem;
+  background-color: #073c60;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Game Section */
+.game {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.option {
+  width: 120px;
+  height: 120px;
+  background-color: #e2efff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.option:hover {
+  transform: scale(1.1);
+}
+
+.option img {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Score Section */
+.score {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.score div p:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Move/Reset Button */
+.move {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #0b2c48;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s;
+}
+
+.move:hover {
+  background-color: #144569;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+
+  .option {
+    width: 90px;
+    height: 90px;
+  }
+
+  .option img {
+    width: 70%;
+  }
+
+  .score {
+    gap: 2rem;
+    font-size: 1rem;
+  }
+
+  .score div p:first-child {
+    font-size: 1.5rem;
+  }
+
+  .move {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .game {
+    gap: 1.5rem;
+  }
+
+  .option {
+    width: 75px;
+    height: 75px;
+  }
+
+  .option img {
+    width: 65%;
+  }
+
+  .score {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .move {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
